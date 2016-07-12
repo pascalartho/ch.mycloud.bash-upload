@@ -51,21 +51,21 @@ do
   encodedString=$(echo -n "$mycloudFolder$file" | openssl base64 | tr -d '\n')
   
   # Remove any trailing '='
-  # encodedString=$(echo $encodedString | cut -f1 -d=)
+  encodedString=$(echo $encodedString | cut -f1 -d=)
   
   # 62nd char of encoding
-  # encodedString=${encodedString//'+'/'-'}
+  encodedString=${encodedString//'+'/'-'}
   
   # 63rd char of encoding
-  # encodedString=${encodedString//'/'/'_'}
+  encodedString=${encodedString//'/'/'_'}
   
   # Standard base64 decoder
-  decodedString=$(openssl base64 -d <<< $encodedString)
+  # decodedString=$(openssl base64 -d <<< $encodedString)
   
   # Debug information
   echo "Encoded Filename: $encodedString"
   echo "Filename:         $file"
-  echo "Decoded Filename: $decodedString"
+  # echo "Decoded Filename: $decodedString"
   
   # Upload file using curl
   # if needed add "-k" or "--insecure" to perform "insecure" SSL connections and transfers

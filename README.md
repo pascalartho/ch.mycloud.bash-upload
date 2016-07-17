@@ -24,9 +24,10 @@ The last parameter (````access_token````) is the one we have to extract. This to
 
 ## Open tasks
 - The login process is not done automatically. The access token has to be set manually
-- Identical files (identical modification date and file size) are not skipped.
+- Identical files (identical modification date and file size) are not skipped - alternative see https://github.com/pascalartho/ch.mycloud.python-upload
 - Upload is not parallelized
 
 ## References
 - https://www.mycloud.ch/
 - https://www.swisscom.ch/en/residential/help/loesung/mycloud-faq.html
+- https://github.com/pascalartho/ch.mycloud.python-upload

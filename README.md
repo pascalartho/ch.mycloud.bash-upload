@@ -31,3 +31,4 @@ The last parameter (````access_token````) is the one we have to extract. This to
 - https://www.mycloud.ch/
 - https://www.swisscom.ch/en/residential/help/loesung/mycloud-faq.html
 - https://github.com/pascalartho/ch.mycloud.python-upload
+- https://github.com/pascalartho/ch.mycloud.python-download
